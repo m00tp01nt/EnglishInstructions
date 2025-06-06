@@ -91,6 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateCarouselHeight(carousel) {
+
+    if (showingAll) return;
+
     const track = carousel.querySelector('.carousel-track');
     const steps = carousel.querySelectorAll('.step');
     let maxHeight = 0;
