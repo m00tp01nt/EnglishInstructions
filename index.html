@@ -3,12 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>How To Replace Your Laptop's Thermal Paste</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        console.log("Hello, World!")
-    </script>
-    what's up bremma
+<div class="container">
+
+
+    <h1>How To Replace Your Laptop's Thermal Paste</h1>
+    <div class="description italics main-column">
+        <p>These instructions are intended for laptop-owning tech-savvy do-it-yourself people whose laptops are overheating or slow/experiencing performance issues.</p>
+    </div>
+    <div class="description main-column">
+        <h2>What is thermal paste?</h2>
+        <p><a href="https://www.corsair.com/us/en/explorer/glossary/what-is-thermal-paste">Thermal paste</a> is a thermally conductive compound inside computers that helps distribute heat away from heat generating components. Over time it dries out, becoming less effective, and leading to overheating.</p>
+        <p>When thermal paste dries out, it should be replaced to keep your laptop running smoothly.</p>
+    </div>
+    <h2>
+        Step 1 - Is the problem your thermal paste?
+    </h2>
+    <div>
+        <p>
+            Before doing anything, be sure the problem is dry thermal paste. Follow these instructions to check.
+        </p>
+
+        <h3>Listen to your laptop's fans</h3>
+            <p>If they are always on, even when your laptop isn't doing anything, dry thermal paste could be the problem.</p>
+            <p>Keep in mind that if the environment the laptop is in is hot, the laptop will run hotter than normal. If this is the case, moving to a cooler or air-conditioned room may solve performance issues.</p>
+        <h3>Use MSI Afterburner to check the temperature of your laptop's components</h3>
+        <p>Go to the MSI Afterburner <a href="https://www.msi.com/Landing/afterburner/graphics-cards">website</a>. Download the version labled [Final]. Then, follow the steps below to install it to your system.</p>
+    </div>
+
+    <!-- Install MSI Afterburner -->
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="step">
+                <img src="pictures/ExtractAfterburner.png" alt="Extract MSI Afterburner">
+                <p>Open File Explorer. Click "Downloads" (1), click on the downloaded file (2), then click "Extract All" (3).</p>
+            </div>
+            <div class="step">
+                <img src="pictures/Extract.png" alt="Extract the files into the dowloads folder">
+                <p>Click "Extract". This will extract the file we downloaded into the Downloads folder on our computer. A new File Explorer window will open showing the file we extracted. Double click it to run it.</p>
+            </div>
+            <div class="step">
+                <img src="pictures/DodgeBloatware.png">
+                <p>The installation window will open. Make sure that "Norton 360 for Gamer" is not selected (6). Then, click "Install" (7). If Windows asks you "Do you want to allow this app to make changes to your device?", click "Yes".</p>
+            </div>
+            <div class="step">
+                <img src="pictures/LanguageSelection.png">
+                <p>A new window will open. Select your language and click "Ok" (9).</p>
+            </div>
+            <div class="step">
+                <img src="pictures/FirstScreen.png">
+                <p>Click "Next" (10).</p>
+            </div>
+            <div class="step">
+                <img src="pictures/MSITOS.png">
+                <p>Read through the Terms of Service, and accept them (11). Then, click "Next" (12).</p>
+            </div>
+            <div class="step">
+                <img src="pictures/MSIComponentInstallation.png">
+                <p>Unselect "RivaTuner Statistics Server" (13), and click "Next" (14).</p>
+            </div>
+            <div class="step">
+                <img src="pictures/MSIIstallLocation.png">
+                <p>Select the install location for MSI Afterburner, then click "Next" (15)</p>
+            </div>
+            <div class="step">
+                <img src="pictures/FinallyInstallMSI.png">
+                <p>Click "Install" (16) to install MSI Afterburner.</p>
+            </div>
+            <div class="step">
+                <img src="pictures/FinallyInstallMSIAfterburner.png">
+                <p>Uncheck "Show Readme" (18). Then click "Finish" (19) to open MSI Afterburner.</p>
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-button prev">&#8592;</button>
+            <button class="carousel-button next">&#8594;</button>
+        </div>
+    </div>
+
+
+    <!-- Show Temperatures -->
+    <p>Now that MSI Afterburner is installed, we can use it to see the temperature of our CPU and GPU.</p>
+    <ul>
+        <li>Our CPU is like the brains of our computer. Your programs and apps run on the CPU.</li>
+        <li>Our GPU is what makes games and professional software run faster. It helps offload tasks in your programs and apps from the CPU.</li>
+    </ul>
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="step">
+                <img src="pictures/OpenDiagnostics.png">
+                <p>On the left side, click the icon showing a monitor with a graph. (20)</p>
+            </div>
+            <div class="step">
+                <img src="pictures/GPU1Temperature.png">
+                <p>A new window will open called the Hardware Monitor. This window gives you information about different components inside your laptop. We are interested in CPU and GPU temperature. On the right side of the Hardware Monitor, look for "GPU1 Temperature" (shown above) and "CPU temperature". They probably won't be nex to each other, and you many have to scroll through the list to find them. The text will be hard to read.</p>
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-button prev">&#8592;</button>
+            <button class="carousel-button next">&#8594;</button>
+        </div>
+    </div>
+
+    <!-- Interpret temperatures -->
+    <p>After you've found your GPU and CPU temperatures in the Hardware Monitor, close all the programs and apps that are non-essential. This ensure the computer is idleing, or doing the bare minimum amount of work.</p>
+    <p>Monitor the graph for about 30 seconds to get a good idea of how hot your components are while the computer isn't working hard.</p>
+    <p>Check your laptop manufacturor's website for exact temperatures, but a good rule of thumb is all components should be below 50 degrees celcius while the computer is idle.</p>
+    <p>If the temperatures shown are below 50 degrees celcius, temperature is probably not the thing slowing down your laptop.</p>
+    <p>If the temperatures are above 50 degrees celcius, replacing the thermal paste could help solve your performance problem.</p>
+
+    
+
+</div>
 </body>
 </html>

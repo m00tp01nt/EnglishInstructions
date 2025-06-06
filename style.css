@@ -1,0 +1,98 @@
+/* So was this :( */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #f0f0f0;
+    width: 95%;
+    max-width: 1500px;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: none;
+        min-width: 700px;
+    }
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #444;
+}
+
+img {
+  display: block !important;
+  margin-inline: auto !important;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  outline: 3px solid #888;
+  border-radius: 8px;
+}
+
+.carousel-buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-track {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: #222;
+}
+
+.step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.step.showing {
+  display: block;
+}
+
+.step img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  outline: 3px solid #888;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
