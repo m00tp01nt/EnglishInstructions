@@ -38,13 +38,17 @@ p {
 }
 
 img {
-  display: block !important;
-  margin-inline: auto !important;
+  display: block;
+  margin-inline: auto;
   max-width: 100%;
   height: auto;
   text-align: center;
-  outline: 3px solid #888;
+}
+
+.carousel {
+  outline: 3px solid #555555;
   border-radius: 8px;
+  padding: 5px;
 }
 
 .carousel-buttons {
@@ -68,8 +72,8 @@ img {
   cursor: pointer;
 }
 
-.carousel-button:hover {
-  background-color: #222;
+.carousel-button.disabled {
+  background-color: #939393;
 }
 
 .step {
@@ -90,7 +94,6 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  outline: 3px solid #888;
   margin-top: 1rem;
   display: block;
   margin-left: auto;
