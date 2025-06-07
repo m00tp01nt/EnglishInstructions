@@ -19,6 +19,7 @@ function showStep(index) {
     nextBtn?.classList.toggle('disabled', index === steps.length - 1);
 
     steps.forEach((step, i) => {
+        step.querySelector("img").classList.remove('expanded');
         if (i === index) {
             step.classList.add('showing');
             step.style.display = 'block';
@@ -35,6 +36,7 @@ function showStep(index) {
 
     function showAllSteps() {
       steps.forEach(step => {
+        step.querySelector("img").classList.remove('expanded');
         step.classList.add('showing');
         step.style.position = 'relative';
         step.style.display = 'block';
@@ -58,7 +60,7 @@ function revertToCarousel() {
     showingAll = false;
     showStep(currentIndex);
     updateCarouselHeight(carousel);
-}
+  }
 
     showAllBtn?.addEventListener('click', () => {
       if (!showingAll) {
@@ -66,7 +68,7 @@ function revertToCarousel() {
         showAllBtn.textContent = 'Show One at a Time';
       } else {
         revertToCarousel();
-        showAllBtn.textContent = 'Show All';
+        showAllBtn.textContent = 'Show All Steps';
       }
     });
 
@@ -138,6 +140,13 @@ function revertToCarousel() {
 
     showStep(currentIndex);
   });
+
+    document.querySelectorAll('img.expandable').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('expanded');
+    });
+  });
+
 });
 
 console.log("You're not supposed to be here!");
