@@ -13,8 +13,8 @@ body {
 
 .container {
     background-color: #f0f0f0;
-    width: 95%;
-    max-width: 1500px;
+    width: 90%;
+    max-width: 900px;
     margin: 2rem;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -24,8 +24,8 @@ body {
 @media (min-width: 768px) {
     .container {
         width: 70%;
-        max-width: none;
-        min-width: 700px;
+        max-width: 650px;
+        min-width: 500px;
     }
 }
 
@@ -102,7 +102,6 @@ img {
 
 img.expandable {
   cursor: zoom-in;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
 
@@ -110,7 +109,7 @@ img.expandable.expanded {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 90vw;
+  max-width: 95vw;
   max-height: 90vh;
   transform: translate(-50%, -50%);
   z-index: 9999;

@@ -141,7 +141,7 @@ function revertToCarousel() {
     showStep(currentIndex);
   });
 
-    document.querySelectorAll('img.expandable').forEach(img => {
+  document.querySelectorAll('img.expandable').forEach(img => {
     img.addEventListener('click', () => {
       img.classList.toggle('expanded');
     });
