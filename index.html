@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class="container">
+    <button class="carousel-button show-all large-text" id="screen-reader-friendly">Click to Assist Screen Readers</button>
     <h1>How To Replace Your Laptop's Thermal Paste</h1>
     <p>These instructions are intended for laptop-owning tech-savvy do-it-yourself people whose laptops are overheating or slow/experiencing performance issues.</p>
     <p>If you don't feel comfortable taking apart your laptop, call tech support.</p>
@@ -18,13 +19,13 @@
     <p>When thermal paste dries out, it should be replaced to keep your laptop running smoothly.</p>
 
     <h3>Supplies and Tools</h3>
-    <p>You're going to need some tools before you start.</p>    
-    <input type="checkbox">Thermal Paste<br>
-    <input type="checkbox">Microfiber Cloth<br>
-    <input type="checkbox">Isopropyl Alcohol<br>
-    <input type="checkbox">Small non-magnetic screwdriver with multiple bits<br>
-    <input type="checkbox">Some couple plastic pry tools<br>
-    <input type="checkbox">Gloves for handling the thermal paste<br>
+    <p>You're going to need some tools before you start.</p>
+    <p><input type="checkbox" id="thermal-paste"><label for="thermal-paste"> Thermal Paste</label></p>
+    <p><input type="checkbox" id="microfiber-cloth"><label for="microfiber-cloth"> Microfiber Cloth</label></p>
+    <p><input type="checkbox" id="isopropyl-alcohol"><label for="isopropyl-alcohol"> Isopropyl Alcohol</label></p>
+    <p><input type="checkbox" id="screwdriver"><label for="screwdriver"> Small non-magnetic screwdriver with multiple bits</label></p>
+    <p><input type="checkbox" id="pry-tools"><label for="pry-tools"> A couple plastic pry tools</label></p>
+    <p><input type="checkbox" id="gloves"><label for="gloves"> Gloves for working with the thermal paste</label></p>
 
     <h2>Step 1 - Is the problem your thermal paste?</h2>
     <p>Before doing anything, be sure the problem is dry thermal paste. Follow these instructions to check.</p>
@@ -37,47 +38,47 @@
     <p>Go to the MSI Afterburner <a href="https://www.msi.com/Landing/afterburner/graphics-cards">website</a>. Download the version labeled [Final]. Then, follow the steps below to install it to your system.</p>
 
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/ExtractAfterburner.webp" alt="Extract MSI Afterburner">
-                <p>Open File Explorer. Click "Downloads" (1), click on the downloaded file (2), then click "Extract All" (3).</p>
+                <p>Open File Explorer. (1) Click "Downloads", (2) click on the downloaded file, (3) then click "Extract All".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/Extract.webp" alt="Extract the files into the dowloads folder">
-                <p>Click "Extract". This will extract the file we downloaded into the Downloads folder on our computer. A new File Explorer window will open showing the file we extracted. Double click it to run it.</p>
+                <p>(4) Click "Extract". This will extract the file we downloaded into the Downloads folder on our computer. A new File Explorer window will open showing the file we extracted. Double click it to run it.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/DodgeBloatware.webp">
-                <p>The installation window will open. Make sure that "Norton 360 for Gamer" is not selected (6). Then, click "Install" (7). If Windows asks you "Do you want to allow this app to make changes to your device?", click "Yes".</p>
+                <p>The installation window will open. (6) Make sure that "Norton 360 for Gamer" is not selected. (7) Then, click "Install". If Windows asks you "Do you want to allow this app to make changes to your device?", click "Yes".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/LanguageSelection.webp">
-                <p>A new window will open. Select your language and click "Ok" (9).</p>
+                <p>(9) A new window will open. Select your language and click "Ok".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/FirstScreen.webp">
-                <p>Click "Next" (10).</p>
+                <p>(10) Click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSITOS.webp">
-                <p>Read through the Terms of Service, and accept them (11). Then, click "Next" (12).</p>
+                <p>(11) Read through the Terms of Service, and accept them. (12) Then, click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSIComponentInstallation.webp">
-                <p>Deselect "RivaTuner Statistics Server" (13), and click "Next" (14).</p>
+                <p>(13) Deselect "RivaTuner Statistics Server" (13). (14) Click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSIIstallLocation.webp">
-                <p>Select the install location for MSI Afterburner, then click "Next" (15)</p>
+                <p>(15) Select the install location for MSI Afterburner. Then click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/FinallyInstallMSI.webp">
-                <p>Click "Install" (16) to install MSI Afterburner.</p>
+                <p>(16) Click "Install" to install MSI Afterburner.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/FinallyInstallMSIAfterburner.webp">
-                <p>Uncheck "Show Readme" (18). Then click "Finish" (19) to open MSI Afterburner.</p>
+                <p>(18) Uncheck "Show Readme". (19) Click "Finish" to open MSI Afterburner.</p>
             </div>
         </div>
         <div class="carousel-buttons">
@@ -93,11 +94,11 @@
         <li>Our GPU is what makes games and professional software run faster. It helps offload tasks in your programs and apps from the CPU.</li>
     </ul>
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/OpenDiagnostics.webp">
-                <p>On the left side, click the icon showing a monitor with a graph. (20)</p>
+                <p>(20) On the left side, click the icon showing a monitor with a graph.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/GPU1Temperature.webp">
@@ -119,14 +120,14 @@
 
     <h2>Step 2 - Tear down the laptop</h2>
 
-    <p>Before we continue, <b>make sure you have new thermal paste on hand!</b> It would be the pits if you have your laptop all torn up only to realize you forgot to get good thermal paste.</p>
+    <p>Before we continue, <strong>make sure you have new thermal paste on hand!</strong> It would be unfortunate if you have your laptop all torn up only to realize you forgot to get good thermal paste.</p>
     <p>Do some research to figure out what you need, but in general, you don't need anything too fancy. I got the cheapest I could find at my local Best Buy and it's worked fine.</p>
     <p>These steps are general outlines for tearing down laptops, specifically those designed for gaming. Your laptop may have extra steps, or not need a particular step.</p>
     <p>If you don't feel comfortable continuing while the laptop is still open, take a break. If after the break you still don't feel comfortable continuing, put the laptop back together, and contact professional tech support about your issue. I'll let you know when we've hit the point of no return on the disassembly side.</p>
     <p>I also recommend figuring out your system for storing screws before you start. I'll be using a magnetic screw holder, but small cups or office supply organizers work just as well.</p>
 
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0324.webp">
@@ -146,7 +147,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0329.webp">
-                <p>After all the screws are removed, slide your plastic pry tools into the seams of the laptop, but <b>steer clear of ports.</b> Ports have delicate cables that connect them to internal components, and if the cables break, the ports break. The goal here is to separate the back plastic bottom from the chassis the laptop internals are screwed to. Expect to hear some clips snapping.</p>
+                <p>After all the screws are removed, slide your plastic pry tools into the seams of the laptop, but <strong>steer clear of ports.</strong> Ports have delicate cables that connect them to internal components, and if the cables break, the ports break. The goal here is to separate the back plastic bottom from the chassis the laptop internals are screwed to. Expect to hear some clips snapping.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0332.webp">
@@ -167,7 +168,7 @@
     <p>Congratulations! You're inside your laptop. Let's take a second to get our bearings before we go any deeper.</p>
     <p>Everything is screwed and plugged into the motherboard. Components use the motherboard to talk to each other.</p>
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/storage_devices.webp">
@@ -199,7 +200,7 @@
 
     <p>After you've located your cooling system (fans, radiators, and one or two cooling blocks), go ahead and continue tearing the laptop down. This is the point of no return. After you've lifted the cooling system out of the laptop, you should avoid reassembling the laptop until fresh thermal paste has been applied.</p>
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0339.webp">
@@ -223,7 +224,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0347.webp">
-                <p><b>This is the point of no return. After completing this step, avoid reassembling the laptop until fresh thermal paste has been applied.</b><br>Gently loosen the cooling system from the laptop. You may have to gently twist it.</p>
+                <p><strong>This is the point of no return. After completing this step, avoid reassembling the laptop until fresh thermal paste has been applied.</strong><br>Gently loosen the cooling system from the laptop. You may have to gently twist it.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0349.webp">
@@ -244,7 +245,7 @@
     <p>Congratulations! You've removed the cooling system from your laptop. The hard part's over.</p>
     <p>Let's take a second to get our bearings before moving on.</p>
     <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0351.webp">
@@ -271,7 +272,7 @@
     <p>I'm also going to put on some gloves. <a href="https://koolingmonster.com/insights/is-thermal-paste-toxic">Modern thermal paste isn't dangerous</a>, but it may be difficult to clean off your hands.</p>
     <p>When you're ready, continue to the next step.</p>
    <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0359.webp">
@@ -318,7 +319,7 @@
     <h2>Step 4 - Reassembly</h2>
     <p>This is basically step 1, but in reverse.</p>
    <div class="carousel">
-        <div class="carousel-button show-all">Show All Steps</div>
+        <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0384.webp">

@@ -72,6 +72,16 @@ img {
   cursor: pointer;
 }
 
+.large-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.show-all {
+  width: 100%;
+}
+
 .carousel-button.disabled {
   background-color: #939393;
 }

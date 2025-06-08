@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let showingAll = false;
 
-    steps.forEach((step) => {
+    steps.forEach((step, index) => {
         const img = step.querySelector('img');
-        img.setAttribute('alt', step.querySelector('p').textContent);
+        // img.setAttribute('alt', step.querySelector('p').textContent); // This version sucked with the screen reader
+        img.setAttribute('alt', `Step ${index + 1} of ${steps.length}`);
     });
 
 function showStep(index) {
@@ -147,6 +148,30 @@ function revertToCarousel() {
     });
   });
 
+  const enableScreenReaderMode = document.getElementById("screen-reader-friendly");
+  enableScreenReaderMode.addEventListener("click", () => {
+    // Disable screen reader assist
+    if (enableScreenReaderMode.classList.contains("enabled")) {
+      enableScreenReaderMode.innerHTML = "Click to Assist Screen Readers";
+      document.querySelectorAll(".carousel").forEach(carousel => {
+        const showAll = carousel.querySelector(".show-all");
+        showAll.click();
+        showAll.style.display = "block";
+      });
+      enableScreenReaderMode.classList.remove("enabled");
+    }
+    // Enable screen reader assist
+    else {
+      enableScreenReaderMode.innerHTML = "Click to Revert"
+      document.querySelectorAll(".carousel").forEach(carousel => {
+        const showAll = carousel.querySelector(".show-all");
+        showAll.click();
+        showAll.style.display = "none";
+      });
+      enableScreenReaderMode.classList.add("enabled");
+    }
+  });
+  
 });
 
 console.log("You're not supposed to be here!");
