@@ -139,6 +139,15 @@ img.expandable.expanded {
   text-align: center;
 }
 
+.warn {
+  padding: 20px;
+  background-color: #ff8c00;
+  color: white;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .info {
   padding: 20px;
   background-color: #008a12;
