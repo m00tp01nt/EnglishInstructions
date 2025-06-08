@@ -19,7 +19,7 @@
     <p>When thermal paste dries out, it should be replaced to keep your laptop running smoothly.</p>
 
     <h3>Supplies and Tools</h3>
-    <p>You're going to need some tools before you start.</p>
+    <p>You're going to need some supplies and tools before you start.</p>
     <p><input type="checkbox" id="thermal-paste"><label for="thermal-paste"> Thermal Paste</label></p>
     <p><input type="checkbox" id="microfiber-cloth"><label for="microfiber-cloth"> Microfiber Cloth</label></p>
     <p><input type="checkbox" id="isopropyl-alcohol"><label for="isopropyl-alcohol"> Isopropyl Alcohol</label></p>
@@ -35,7 +35,7 @@
     <p>Keep in mind that if the environment the laptop is in is hot, the laptop will run hotter than normal. If this is the case, moving to a cooler or air-conditioned room may solve performance issues.</p>
     
     <h3>Use MSI Afterburner to check the temperature of your laptop's components</h3>
-    <p>Go to the MSI Afterburner <a href="https://www.msi.com/Landing/afterburner/graphics-cards">website</a>. Download the version labeled [Final]. Then, follow the steps below to install it to your system.</p>
+    <p>Go to the MSI Afterburner <a href="https://www.msi.com/Landing/afterburner/graphics-cards">website</a>. Download the version labeled <code>(Final)</code>. Then, follow the steps below to install it to your system.</p>
 
     <div class="carousel">
         <button class="carousel-button show-all">Show All Steps</button>
@@ -121,11 +121,12 @@
     <h2>Step 2 - Tear down the laptop</h2>
 
     <p>Before we continue, <strong>make sure you have new thermal paste on hand!</strong> It would be unfortunate if you have your laptop all torn up only to realize you forgot to get good thermal paste.</p>
-    <p>Do some research to figure out what you need, but in general, you don't need anything too fancy. I got the cheapest I could find at my local Best Buy and it's worked fine.</p>
+    <p><a href="https://www.newegg.com/insider/thermal-compound-buying-guide">Do some research to figure out what you need</a>, but in general, you don't need anything too fancy. I got the cheapest I could find at my local Best Buy and it's worked fine.</p>
     <p>These steps are general outlines for tearing down laptops, specifically those designed for gaming. Your laptop may have extra steps, or not need a particular step.</p>
     <p>If you don't feel comfortable continuing while the laptop is still open, take a break. If after the break you still don't feel comfortable continuing, put the laptop back together, and contact professional tech support about your issue. I'll let you know when we've hit the point of no return on the disassembly side.</p>
     <p>I also recommend figuring out your system for storing screws before you start. I'll be using a magnetic screw holder, but small cups or office supply organizers work just as well.</p>
 
+    <h3>Removing the outer panel</h3>
     <div class="carousel">
         <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
@@ -164,7 +165,7 @@
             <button class="carousel-button next">&#8594;</button>
         </div>
     </div>
-
+    <div class="alert" style="margin-top: 12px;">Now that the laptop's protective back panel is removed, the laptop is very fragile. Avoid touching the internals as much as possible.</div>
     <p>Congratulations! You're inside your laptop. Let's take a second to get our bearings before we go any deeper.</p>
     <p>Everything is screwed and plugged into the motherboard. Components use the motherboard to talk to each other.</p>
     <div class="carousel">
@@ -198,6 +199,7 @@
         </div>
     </div>
 
+    <h3>Remove the cooling system</h3>
     <p>After you've located your cooling system (fans, radiators, and one or two cooling blocks), go ahead and continue tearing the laptop down. This is the point of no return. After you've lifted the cooling system out of the laptop, you should avoid reassembling the laptop until fresh thermal paste has been applied.</p>
     <div class="carousel">
         <button class="carousel-button show-all">Show All Steps</button>
@@ -224,7 +226,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0347.webp">
-                <p><strong>This is the point of no return. After completing this step, avoid reassembling the laptop until fresh thermal paste has been applied.</strong><br>Gently loosen the cooling system from the laptop. You may have to gently twist it.</p>
+                <p><div class="alert"><strong>This is the point of no return. After completing this step, avoid reassembling the laptop until fresh thermal paste has been applied.</strong></div>Gently loosen the cooling system from the laptop. You may have to gently twist it.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0349.webp">
@@ -304,7 +306,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0375.webp">
-                <p>Since my CPU is not a square, I'm also going to trace a line down the middle to ensure the entire surface will be covered in thermal paste when the cooling system is reapplied.</p>
+                <p>Since my CPU is not a square, I'm going to trace a line down the middle to ensure the entire surface will be covered in thermal paste when the cooling system is reapplied. The total volume I'm aiming for is still about the size of a pea.</p>
             </div>
         </div>
         <div class="carousel-buttons">
@@ -350,10 +352,6 @@
                 <p>Gently place the back of the laptop onto the laptop chassis. Ensure there aren't any pinched wires, and gently click it back into place.</p>
             </div>
             <div class="step">
-                <img class="expandable" src="pictures/IMG_0397.webp">
-                <p>Gently place the back of the laptop onto the laptop chassis. Ensure there aren't any pinched wires, and gently click it back into place.</p>
-            </div>
-            <div class="step">
                 <img class="expandable" src="pictures/IMG_0399.webp">
                 <p>Screw the back of the laptop into place. Make sure the right sized screws go into the right holes.</p>
             </div>
@@ -374,7 +372,8 @@
     <p>Now that the laptop is reassembled with fresh thermal paste, turn it on and start MSI Afterburner.</p>
     <p>Open the Hardware Monitor, and check if the temperature of your components has gone down.</p>
     <p>If they have, but you're still having performance issues, you can take dry thermal paste off your list of possibilities.</p>
-
+    <br><br><br>
+    <i>This site was updated last around 12:30 AM 6-8-2025 in response to the replies on my rough draft. The changes my classmates suggested were greatly appreciated and implemented.</i>
 </div>
 </body>
 </html>
