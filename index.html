@@ -12,7 +12,7 @@
     <button class="carousel-button show-all large-text" id="screen-reader-friendly">Click to Assist Screen Readers</button>
     <h1>How To Replace Your Laptop's Thermal Paste</h1>
     <p>These instructions are intended for laptop-owning tech-savvy do-it-yourself people whose laptops are overheating or slow/experiencing performance issues.</p>
-    <p>If you don't feel comfortable taking apart your laptop, call tech support.</p>
+    <p>If you don't feel comfortable taking apart your laptop, do not attempt these instructions and call tech support. A slow laptop is better than a dead laptop.</p>
 
     <h3>What is thermal paste?</h3>
     <p><a href="https://www.corsair.com/us/en/explorer/glossary/what-is-thermal-paste">Thermal paste</a> is a thermally conductive compound inside computers that helps distribute heat away from heat generating components. Over time it dries out, becoming less effective, and leading to overheating.</p>
@@ -28,11 +28,11 @@
     <p><input type="checkbox" id="gloves"><label for="gloves"> Gloves for working with the thermal paste</label></p>
 
     <h2>Step 1 - Is the problem your thermal paste?</h2>
-    <p>Before doing anything, be sure the problem is dry thermal paste. Follow these instructions to check.</p>
+    <p>Before doing anything, be sure the problem is dry thermal paste.</p>
 
     <h3>Listen to your laptop's fans</h3>
     <p>If your laptop's fans are always on, even when your laptop isn't doing anything, dry thermal paste could be the problem.</p>
-    <p>Keep in mind that if the environment the laptop is in is hot, the laptop will run hotter than normal. If this is the case, moving to a cooler or air-conditioned room may solve performance issues.</p>
+    <p>Keep in mind that if the environment the laptop is in is hot, the laptop will run hotter than normal. If this is the case, moving to a cooler room may solve performance issues.</p>
     
     <h3>Use MSI Afterburner to check the temperature of your laptop's components</h3>
     <p>Go to the MSI Afterburner <a href="https://www.msi.com/Landing/afterburner/graphics-cards">website</a>. Download the version labeled <code>(Final)</code>. Then, follow the steps below to install it to your system.</p>
@@ -42,7 +42,7 @@
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/ExtractAfterburner.webp" alt="Extract MSI Afterburner">
-                <p>Open File Explorer. (1) Click "Downloads", (2) click on the downloaded file, (3) then click "Extract All".</p>
+                <p>(1) Open File Explorer. Click "Downloads". (2) Click on the downloaded file. (3) Click "Extract All".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/Extract.webp" alt="Extract the files into the dowloads folder">
@@ -50,7 +50,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/DodgeBloatware.webp">
-                <p>The installation window will open. (6) Make sure that "Norton 360 for Gamer" is not selected. (7) Then, click "Install". If Windows asks you "Do you want to allow this app to make changes to your device?", click "Yes".</p>
+                <p>(6) The installation window will open. Make sure that "Norton 360 for Gamer" is not selected. (7) Click "Install". If Windows asks you "Do you want to allow this app to make changes to your device?", click "Yes".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/LanguageSelection.webp">
@@ -62,11 +62,11 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSITOS.webp">
-                <p>(11) Read through the Terms of Service, and accept them. (12) Then, click "Next".</p>
+                <p>(11) Read through the Terms of Service, and accept them. (12) Click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSIComponentInstallation.webp">
-                <p>(13) Deselect "RivaTuner Statistics Server" (13). (14) Click "Next".</p>
+                <p>(13) Deselect "RivaTuner Statistics Server". (14) Click "Next".</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/MSIIstallLocation.webp">
@@ -102,7 +102,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/GPU1Temperature.webp">
-                <p>A new window will open called the Hardware Monitor. This window gives live information about different components inside your laptop. We are interested in CPU and GPU temperature. On the right side of the Hardware Monitor, look for "GPU1 Temperature" (shown above) and "CPU temperature". They probably won't be next to each other, and you many have to scroll through the list to find them. The text will be hard to read.</p>
+                <p>A new window will open called the Hardware Monitor. This window shows live information about different components inside your laptop. We are interested in CPU and GPU temperature. On the right side of the Hardware Monitor, look for "GPU1 Temperature" (shown above) and "CPU temperature". They probably won't be next to each other, and you many have to scroll through the list to find them.</p>
             </div>
         </div>
         <div class="carousel-buttons">
@@ -112,19 +112,19 @@
         </div>
     </div>
 
-    <p>After you've found your GPU and CPU temperatures in the Hardware Monitor, close all the programs and apps that are non-essential. This ensure the computer is idling, or doing the bare minimum amount of work.</p>
+    <p>After you've found your GPU and CPU temperatures in the Hardware Monitor, close all the programs and apps that are non-essential. This ensures the computer is idling, or doing the bare minimum amount of work.</p>
     <p>Monitor the graph for about 30 seconds to get a good idea of how hot your components are while the computer isn't working hard.</p>
     <p>Check your laptop manufacturer's website for exact temperatures, but a good rule of thumb is all components should be below 50 degrees Celsius while the computer is idle.</p>
-    <p>If the temperatures shown are below 50 degrees Celsius, temperature is probably not the thing slowing down your laptop.</p>
+    <p>If the temperatures shown are below 50 degrees Celsius, your laptop is likely not overheating, and performance issues are not caused by dry thermal paste.</p>
     <p>If the temperatures are above 50 degrees Celsius, replacing the thermal paste could help solve your performance problem.</p>
 
     <h2>Step 2 - Tear down the laptop</h2>
-
+    <div class="info" style="line-height: 1.5;">During the following steps, you may come across screws with stickers on them, or tape with warning labels. They are there to deter owners from opening their electronics by threatening loss of warrenty. <a style="color: white;" href="https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-warns-companies-stop-warranty-practices-harm-consumers-right-repair">This practice is illegal within the United States. Your warrenty is not dependant on whether or not you open your laptop (source: FTC).</a> You have the right to repair your electronics.</div>
     <p>Before we continue, <strong>make sure you have new thermal paste on hand!</strong> It would be unfortunate if you have your laptop all torn up only to realize you forgot to get good thermal paste.</p>
     <p><a href="https://www.newegg.com/insider/thermal-compound-buying-guide">Do some research to figure out what you need</a>, but in general, you don't need anything too fancy. I got the cheapest I could find at my local Best Buy and it's worked fine.</p>
     <p>These steps are general outlines for tearing down laptops, specifically those designed for gaming. Your laptop may have extra steps, or not need a particular step.</p>
     <p>If you don't feel comfortable continuing while the laptop is still open, take a break. If after the break you still don't feel comfortable continuing, put the laptop back together, and contact professional tech support about your issue. I'll let you know when we've hit the point of no return on the disassembly side.</p>
-    <p>I also recommend figuring out your system for storing screws before you start. I'll be using a magnetic screw holder, but small cups or office supply organizers work just as well.</p>
+    <p>I also recommend figuring out a system for sorting and storing screws before you start. I'll be using a magnetic screw holder, but small cups or office supply organizers work just as well.</p>
 
     <h3>Removing the outer panel</h3>
     <div class="carousel">
@@ -136,7 +136,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0325.webp">
-                <p>Turn your laptop upside down and locate the battery. The first thing you should do when disassembling any electronic device is removing the power from the system. The battery may be screwed into place, or latched like mine is above.</p>
+                <p>Turn your laptop upside down and locate the battery. The first thing you should do when disassembling any electronic device is removing the power from the system. The battery may be screwed into place, or latched like mine is above. <div class="alert">If your laptop's battery cannot be removed from the outside, continue with extreme caution, and safely remove the battery as soon as possible.</div></p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0326.webp">
@@ -165,7 +165,7 @@
             <button class="carousel-button next">&#8594;</button>
         </div>
     </div>
-    <div class="alert" style="margin-top: 12px;">Now that the laptop's protective back panel is removed, the laptop is very fragile. Avoid touching the internals as much as possible.</div>
+    <div class="alert" style="margin-top: 12px;"><div>Now that the laptop's protective back panel is removed, the laptop is very fragile. Avoid touching the internals as much as possible.</div></div>
     <p>Congratulations! You're inside your laptop. Let's take a second to get our bearings before we go any deeper.</p>
     <p>Everything is screwed and plugged into the motherboard. Components use the motherboard to talk to each other.</p>
     <div class="carousel">
@@ -199,8 +199,8 @@
         </div>
     </div>
 
-    <h3>Remove the cooling system</h3>
-    <p>After you've located your cooling system (fans, radiators, and one or two cooling blocks), go ahead and continue tearing the laptop down. This is the point of no return. After you've lifted the cooling system out of the laptop, you should avoid reassembling the laptop until fresh thermal paste has been applied.</p>
+    <h2>Step 3 - Remove the cooling system</h2>
+    <p>After you've located your cooling system (fans, radiators, and one or two cooling blocks), remove it. We are approaching the point of no return. After you've lifted the cooling system out of the laptop, you should avoid reassembling the laptop until fresh thermal paste has been applied.</p>
     <div class="carousel">
         <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
@@ -210,7 +210,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/screw_order.webp">
-                <p>Begin unscrewing the cooling block. There is a specific order for removing the screws. Unscrew opposing corners of screws first, as shown above. These screws are spring loaded, and aren't able to be fully removed.</p>
+                <p>Begin unscrewing the cooling block. There is a specific order for removing the screws. Unscrew opposing corners of screws first, as shown above. These screws may be spring loaded, and may not be able to be fully removed.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0342.webp">
@@ -251,7 +251,7 @@
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0351.webp">
-                <p>Here's a closer picture of the laptop without the cooling system. The gray splotches are the dried thermal paste we're going to remove.</p>
+                <p>Here's a closer picture of the laptop without the cooling system. The gray splotches are the dried thermal paste we're going to replace.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0352.webp">
@@ -269,7 +269,7 @@
         </div>
     </div>
 
-    <h2>Step 3 - Apply new thermal paste</h2>
+    <h2>Step 4 - Apply new thermal paste</h2>
     <p>For this section, it's important to get good airflow. I'm going to open the window I'm working by. If you're in a smaller room, just using a fan may not be enough, and you could have to move to a different room. Safety is key.</p>
     <p>I'm also going to put on some gloves. <a href="https://koolingmonster.com/insights/is-thermal-paste-toxic">Modern thermal paste isn't dangerous</a>, but it may be difficult to clean off your hands.</p>
     <p>When you're ready, continue to the next step.</p>
@@ -278,7 +278,7 @@
         <div class="carousel-track">
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0359.webp">
-                <p>Wet your microfiber cloth with some isopropyl alcohol. I'm using a small glass cup so I can control how much I'm using easily.</p>
+                <p>Wet your microfiber cloth with some isopropyl alcohol. I'm using a small glass cup so I can easily control how much I'm using.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0361.webp">
@@ -290,7 +290,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0379.webp">
-                <p>Remove the dry thermal paste from the cooling system.</p>
+                <p>Remove the dry thermal paste from the cooling system in the same manner.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0372.webp">
@@ -308,6 +308,10 @@
                 <img class="expandable" src="pictures/IMG_0375.webp">
                 <p>Since my CPU is not a square, I'm going to trace a line down the middle to ensure the entire surface will be covered in thermal paste when the cooling system is reapplied. The total volume I'm aiming for is still about the size of a pea.</p>
             </div>
+            <div class="step">
+                <img class="expandable" src="pictures/IMG_0376.webp">
+                <p>Here is the laptop with the freshly applied thermal paste. You don't have to spread out the thermal paste so it covers the GPU and CPU. The cooling system will evenly distrbute the thermal paste across the components when we screw it back in.</p>
+            </div>
         </div>
         <div class="carousel-buttons">
             <button class="carousel-button prev">&#8592;</button>
@@ -318,8 +322,8 @@
 
     <p>Now that the fresh thermal paste has been applied, it's time to start putting things back together.</p>
 
-    <h2>Step 4 - Reassembly</h2>
-    <p>This is basically step 1, but in reverse.</p>
+    <h2>Step 5 - Reassembly</h2>
+    <p>While reassembling, it is important to screw in opposite sides of each cooling block first to evenly distribute the thermal paste onto the component, and tension across the cooling block.</p>
    <div class="carousel">
         <button class="carousel-button show-all">Show All Steps</button>
         <div class="carousel-track">
@@ -341,7 +345,7 @@
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/IMG_0342.webp">
-                <p>Screw the CPU cooling block back into place. It is important to screw in opposite sides first. I like to do each screw halfway, then finish them off during a second pass to make sure the arms apply even tension.</p>
+                <p>Screw the CPU cooling block back into place. I like to do each screw halfway, then finish them off during a second pass.</p>
             </div>
             <div class="step">
                 <img class="expandable" src="pictures/screw_order.webp">
@@ -368,12 +372,12 @@
     </div>
     <p>The laptop is reassembled. Now, let's see if our performance problem was solved!</p>
 
-    <h2>Step 5 - Testing</h2>
+    <h3>Testing</h3>
     <p>Now that the laptop is reassembled with fresh thermal paste, turn it on and start MSI Afterburner.</p>
     <p>Open the Hardware Monitor, and check if the temperature of your components has gone down.</p>
-    <p>If they have, but you're still having performance issues, you can take dry thermal paste off your list of possibilities.</p>
+    <p>If they have, but you're still having performance issues, you can eliminate dry thermal paste as the cause of performance issues.</p>
     <br><br><br>
-    <i>This site was updated last around 12:30 AM 6-8-2025 in response to the replies on my rough draft. The changes my classmates suggested were greatly appreciated and implemented.</i>
+    <div class="info"><i>This site was updated last around 2:00 PM on 6-8-2025 in response to the replies on my rough draft submission. The changes my classmates suggested were greatly appreciated and implemented.</i></div>
 </div>
 </body>
 </html>

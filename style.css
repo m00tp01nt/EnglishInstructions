@@ -94,6 +94,7 @@ img {
   display: none;
   text-align: center;
   transition: opacity 0.4s ease;
+  margin-bottom: 64px;
 }
 
 .step.showing {
@@ -135,6 +136,16 @@ img.expandable.expanded {
   color: white;
   margin-bottom: 8px;
   border-radius: 8px;
+  text-align: center;
+}
+
+.info {
+  padding: 20px;
+  background-color: #008a12;
+  color: white;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 code {
