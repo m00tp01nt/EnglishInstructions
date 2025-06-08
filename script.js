@@ -45,6 +45,7 @@ function showStep(index) {
       if (stepLabel) stepLabel.style.display = 'none';
       if (prevBtn) prevBtn.style.display = 'none';
       if (nextBtn) nextBtn.style.display = 'none';
+
       track.style.height = 'auto';
       showingAll = true;
     }
@@ -67,9 +68,11 @@ function revertToCarousel() {
       if (!showingAll) {
         showAllSteps();
         showAllBtn.textContent = 'Show One at a Time';
+        showAllBtn.classList.add("showing-all");
       } else {
         revertToCarousel();
         showAllBtn.textContent = 'Show All Steps';
+        showAllBtn.classList.remove("showing-all");
       }
     });
 
@@ -155,7 +158,7 @@ function revertToCarousel() {
       enableScreenReaderMode.innerHTML = "Click to Assist Screen Readers";
       document.querySelectorAll(".carousel").forEach(carousel => {
         const showAll = carousel.querySelector(".show-all");
-        showAll.click();
+        if (showAll.classList.contains("showing-all")) showAll.click();
         showAll.style.display = "block";
       });
       enableScreenReaderMode.classList.remove("enabled");
@@ -165,7 +168,7 @@ function revertToCarousel() {
       enableScreenReaderMode.innerHTML = "Click to Revert"
       document.querySelectorAll(".carousel").forEach(carousel => {
         const showAll = carousel.querySelector(".show-all");
-        showAll.click();
+        if (!showAll.classList.contains("showing-all")) showAll.click();
         showAll.style.display = "none";
       });
       enableScreenReaderMode.classList.add("enabled");
